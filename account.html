@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login/Sign up</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <style>
+        @import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Bogle&family=Oswald&display=swap');
+    </style>
+   <link href="output.css" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-gray-200 leading-relaxed">
+    <header>
+        <!-- Navigation Menu -->
+        <nav id="nav-list">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="credits.html">Credits</a></li>
+            </ul>
+        </nav>
+        <button type="button" onclick="toggleMenu(event)">=</button>
+    </header>
+    <h1>Sign Up/Login</h1>
+    <form id="contactForm">
+        <label for="fname">
+        <label for="fname">Account Name:</label><br />
+        <input type="text" id="fname" name="fname" value="" required><br />
+
+        <label for="ps">Account Password:</label><br />
+        <input type="password" id="ps" name="psw" value="" required><br />
+
+        <label for="email">Email:</label><br />
+        <input type="text" id="email" name="email" value="" required><br />
+        <br />
+        <button type="button" onclick="signUp()">Sign Up</button>
+        <button type="button" onclick="login()">Login</button>
+        <p class="error"></p>
+    </form> 
+    <script src="script.js"></script>
+</body>
+</html> 
